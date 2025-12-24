@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>BoozeHub - Categories</title>
+
+<link rel="stylesheet" href="assets/css/style.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+</head>
+<body>
+
+<!-- HEADER -->
+<header class="site-header">
+    <a href="index.html" class="logo">
+        <i class="fa-solid fa-wine-bottle"></i> BoozeHub
+    </a>
+
+    <div class="nav-toggle" onclick="toggleMenu()">
+        <i class="fa-solid fa-bars"></i>
+    </div>
+
+    <nav>
+        <ul id="nav-menu">
+            <li><a href="index.html"><i class="fa-solid fa-house"></i> Home</a></li>
+            <li><a href="shop.html"><i class="fa-solid fa-shop"></i> Shop</a></li>
+            <li><a href="categories.html" class="active"><i class="fa-solid fa-list"></i> Categories</a></li>
+            <li><a href="cart.html"><i class="fa-solid fa-cart-shopping"></i> Cart</a></li>
+            <li><a href="about.html"><i class="fa-solid fa-info-circle"></i> About Us</a></li>
+            <li><a href="contact.html"><i class="fa-solid fa-envelope"></i> Contact</a></li>
+        </ul>
+    </nav>
+</header>
+
+<script>
+function toggleMenu() {
+    document.getElementById('nav-menu').classList.toggle('show');
+}
+</script>
+
+<!-- 1. HERO SECTION -->
+<section class="cat-hero" style="background-image: url('assets/images/hero-categories.jpg');">
+    <div class="cat-hero-content">
+        <h1>Explore Categories</h1>
+        <p>Browse our exclusive collection of premium spirits</p>
+    </div>
+</section>
+
+<!-- 2. ALL CATEGORIES -->
+<section class="cat-all-categories">
+    <h2>Our Categories</h2>
+
+    <div class="cat-categories-container">
+        <a href="#" class="cat-category-card">Wine</a>
+        <a href="#" class="cat-category-card">Whiskey</a>
+        <a href="#" class="cat-category-card">Beer</a>
+        <a href="#" class="cat-category-card">Vodka</a>
+        <a href="#" class="cat-category-card">Rum</a>
+    </div>
+</section>
+
+<!-- 3. SAMPLE CATEGORY PRODUCTS -->
+<section class="cat-selected-products">
+    <h2>Featured Category Products</h2>
+
+    <div class="cat-products-container">
+
+        <div class="cat-product-card">
+            <img src="assets/images/wine1.jpg" alt="Premium Wine">
+            <h3>Premium Red Wine</h3>
+            <p>₹2,499</p>
+            <a href="cart.html" class="btn">Add to Cart</a>
+        </div>
+
+        <div class="cat-product-card">
+            <img src="assets/images/whiskey1.jpg" alt="Whiskey">
+            <h3>Single Malt Whiskey</h3>
+            <p>₹4,999</p>
+            <a href="cart.html" class="btn">Add to Cart</a>
+        </div>
+
+        <div class="cat-product-card">
+            <img src="assets/images/beer1.jpg" alt="Beer">
+            <h3>Craft Beer Pack</h3>
+            <p>₹1,299</p>
+            <a href="cart.html" class="btn">Add to Cart</a>
+        </div>
+
+    </div>
+</section>
+
+<!-- 4. FEATURED PRODUCTS -->
+<section class="cat-featured-products">
+    <h2>Featured Products</h2>
+
+    <div class="cat-products-container">
+
+        <div class="cat-product-card">
+            <img src="assets/images/vodka1.jpg" alt="Vodka">
+            <h3>Classic Vodka</h3>
+            <p>₹1,999</p>
+            <a href="cart.html" class="btn">Add to Cart</a>
+        </div>
+
+        <div class="cat-product-card">
+            <img src="assets/images/rum1.jpg" alt="Rum">
+            <h3>Premium Dark Rum</h3>
+            <p>₹2,199</p>
+            <a href="cart.html" class="btn">Add to Cart</a>
+        </div>
+
+        <div class="cat-product-card">
+            <img src="assets/images/whiskey2.jpg" alt="Whiskey">
+            <h3>Blended Scotch</h3>
+            <p>₹3,499</p>
+            <a href="cart.html" class="btn">Add to Cart</a>
+        </div>
+
+    </div>
+</section>
+
+<!-- 5. NEWSLETTER -->
+<section class="cat-newsletter">
+    <h2>Stay Updated</h2>
+    <p>Subscribe to our newsletter for latest products and exclusive offers.</p>
+
+    <form>
+        <input type="email" placeholder="Enter your email" required>
+        <button type="submit" class="btn">Subscribe</button>
+    </form>
+</section>
+
+<!-- FOOTER -->
+<footer class="site-footer">
+    <p>© 2025 BoozeHub. All Rights Reserved.</p>
+</footer>
+
+</body>
+</html>

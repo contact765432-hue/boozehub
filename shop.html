@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>BoozeHub - Premium Spirits</title>
+
+<link rel="stylesheet" href="assets/css/style.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+</head>
+<body>
+
+<!-- Header -->
+<header class="site-header">
+    <a href="index.html" class="logo">
+        <i class="fa-solid fa-wine-bottle"></i> BoozeHub
+    </a>
+
+    <div class="nav-toggle" onclick="toggleMenu()">
+        <i class="fa-solid fa-bars"></i>
+    </div>
+
+    <nav>
+        <ul id="nav-menu">
+            <li><a href="index.html"><i class="fa-solid fa-house"></i> Home</a></li>
+            <li><a href="shop.html"><i class="fa-solid fa-shop"></i> Shop</a></li>
+            <li><a href="categories.html"><i class="fa-solid fa-list"></i> Categories</a></li>
+            <li><a href="cart.html"><i class="fa-solid fa-cart-shopping"></i> Cart</a></li>
+            <li><a href="about.html"><i class="fa-solid fa-info-circle"></i> About Us</a></li>
+            <li><a href="contact.html"><i class="fa-solid fa-envelope"></i> Contact</a></li>
+        </ul>
+    </nav>
+</header>
+
+<script>
+function toggleMenu() {
+    document.getElementById('nav-menu').classList.toggle('show');
+}
+</script>
+
+<!-- Shop Hero -->
+<section class="shop-hero" style="background-image: url('assets/images/shop-hero.jpg');">
+    <div class="shop-hero-content">
+        <h1>Shop Premium Spirits</h1>
+        <p>Browse our exclusive selection of wines, whiskeys, beers, vodkas & rums</p>
+        <a href="#shop-categories" class="btn">Explore Categories</a>
+    </div>
+</section>
+
+<!-- Shop Categories -->
+<section class="shop-categories" id="shop-categories">
+    <h2>Shop by Category</h2>
+    <div class="shop-categories-container">
+        <a href="#" class="shop-category-card">Wine</a>
+        <a href="#" class="shop-category-card">Whiskey</a>
+        <a href="#" class="shop-category-card">Beer</a>
+        <a href="#" class="shop-category-card">Vodka</a>
+        <a href="#" class="shop-category-card">Rum</a>
+    </div>
+</section>
+
+<!-- Featured Products -->
+<section class="shop-featured">
+    <h2>Featured Products</h2>
+
+    <div class="shop-products-container">
+
+        <div class="shop-product-card">
+            <img src="assets/images/wine1.jpg" alt="Red Wine">
+            <h3>Classic Red Wine</h3>
+            <p>₹1,499</p>
+            <a href="cart.html" class="btn">Add to Cart</a>
+        </div>
+
+        <div class="shop-product-card">
+            <img src="assets/images/whiskey1.jpg" alt="Whiskey">
+            <h3>Premium Whiskey</h3>
+            <p>₹3,299</p>
+            <a href="cart.html" class="btn">Add to Cart</a>
+        </div>
+
+        <div class="shop-product-card">
+            <img src="assets/images/beer1.jpg" alt="Beer">
+            <h3>Craft Beer Pack</h3>
+            <p>₹899</p>
+            <a href="cart.html" class="btn">Add to Cart</a>
+        </div>
+
+        <div class="shop-product-card">
+            <img src="assets/images/vodka1.jpg" alt="Vodka">
+            <h3>Imported Vodka</h3>
+            <p>₹2,199</p>
+            <a href="cart.html" class="btn">Add to Cart</a>
+        </div>
+
+        <div class="shop-product-card">
+            <img src="assets/images/rum1.jpg" alt="Rum">
+            <h3>Dark Rum Reserve</h3>
+            <p>₹1,899</p>
+            <a href="cart.html" class="btn">Add to Cart</a>
+        </div>
+
+        <div class="shop-product-card">
+            <img src="assets/images/wine2.jpg" alt="Wine">
+            <h3>White Wine Classic</h3>
+            <p>₹1,299</p>
+            <a href="cart.html" class="btn">Add to Cart</a>
+        </div>
+
+        <div class="shop-product-card">
+            <img src="assets/images/whiskey2.jpg" alt="Whiskey">
+            <h3>Single Malt Whiskey</h3>
+            <p>₹4,999</p>
+            <a href="cart.html" class="btn">Add to Cart</a>
+        </div>
+
+        <div class="shop-product-card">
+            <img src="assets/images/beer2.jpg" alt="Beer">
+            <h3>Premium Lager</h3>
+            <p>₹749</p>
+            <a href="cart.html" class="btn">Add to Cart</a>
+        </div>
+
+    </div>
+</section>
+
+<!-- New Arrivals -->
+<section class="shop-new-arrivals">
+    <h2>New Arrivals</h2>
+
+    <div class="shop-carousel-container">
+        <div class="shop-carousel-track">
+
+            <div class="shop-carousel-item">
+                <img src="assets/images/new1.jpg" alt="">
+                <h4>Imported Gin</h4>
+                <p>₹2,599</p>
+            </div>
+
+            <div class="shop-carousel-item">
+                <img src="assets/images/new2.jpg" alt="">
+                <h4>Luxury Champagne</h4>
+                <p>₹5,499</p>
+            </div>
+
+            <div class="shop-carousel-item">
+                <img src="assets/images/new3.jpg" alt="">
+                <h4>Premium Tequila</h4>
+                <p>₹3,799</p>
+            </div>
+
+            <div class="shop-carousel-item">
+                <img src="assets/images/new4.jpg" alt="">
+                <h4>Flavored Vodka</h4>
+                <p>₹1,999</p>
+            </div>
+
+        </div>
+
+        <button class="shop-carousel-btn prev">
+            <i class="fa-solid fa-chevron-left"></i>
+        </button>
+        <button class="shop-carousel-btn next">
+            <i class="fa-solid fa-chevron-right"></i>
+        </button>
+    </div>
+</section>
+
+<!-- Newsletter -->
+<section class="shop-newsletter">
+    <h2>Stay Updated with BoozeHub</h2>
+    <p>Subscribe for exclusive deals and new arrivals directly in your inbox.</p>
+
+    <form action="contact.html">
+        <input type="email" placeholder="Enter your email" required>
+        <button type="submit" class="btn">Subscribe</button>
+    </form>
+</section>
+
+<!-- Footer -->
+<footer>
+    <p>&copy; 2025 BoozeHub. All Rights Reserved.</p>
+    <div class="social-icons">
+        <a href="#"><i class="fa-brands fa-facebook-f"></i></a>
+        <a href="#"><i class="fa-brands fa-instagram"></i></a>
+        <a href="#"><i class="fa-brands fa-twitter"></i></a>
+    </div>
+</footer>
+
+<script src="assets/js/script.js"></script>
+
+</body>
+</html>

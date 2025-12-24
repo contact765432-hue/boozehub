@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>BoozeHub - Cart</title>
+
+<link rel="stylesheet" href="assets/css/style.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+</head>
+<body>
+
+<!-- HEADER -->
+<header class="site-header">
+    <a href="index.html" class="logo">
+        <i class="fa-solid fa-wine-bottle"></i> BoozeHub
+    </a>
+
+    <div class="nav-toggle" onclick="toggleMenu()">
+        <i class="fa-solid fa-bars"></i>
+    </div>
+
+    <nav>
+        <ul id="nav-menu">
+            <li><a href="index.html"><i class="fa-solid fa-house"></i> Home</a></li>
+            <li><a href="shop.html"><i class="fa-solid fa-shop"></i> Shop</a></li>
+            <li><a href="categories.html"><i class="fa-solid fa-list"></i> Categories</a></li>
+            <li><a class="active" href="cart.html"><i class="fa-solid fa-cart-shopping"></i> Cart</a></li>
+            <li><a href="about.html"><i class="fa-solid fa-info-circle"></i> About Us</a></li>
+            <li><a href="contact.html"><i class="fa-solid fa-envelope"></i> Contact</a></li>
+        </ul>
+    </nav>
+</header>
+
+<script>
+function toggleMenu() {
+    document.getElementById('nav-menu').classList.toggle('show');
+}
+</script>
+
+<!-- CART HERO -->
+<section class="cart-hero">
+    <div class="cart-hero-content">
+        <h1>Your Shopping Cart</h1>
+        <p>Review your selected premium spirits before checkout.</p>
+    </div>
+</section>
+
+<!-- CART ITEMS -->
+<section class="cart-items-section-v2">
+    <h2>Cart Items</h2>
+
+    <div class="cart-items-container-v2">
+
+        <!-- ITEM 1 -->
+        <div class="cart-item-card">
+            <div class="cart-item-img">
+                <img src="assets/images/whiskey1.jpg" alt="Premium Whiskey">
+            </div>
+            <div class="cart-item-details">
+                <h3>Premium Whiskey</h3>
+                <p class="price">Price: ₹2,500.00</p>
+
+                <div class="cart-qty-form">
+                    <input type="number" value="1" min="1">
+                    <button class="btn-update">Update</button>
+                </div>
+
+                <p class="subtotal">Subtotal: ₹2,500.00</p>
+                <a href="#" class="btn-remove">
+                    <i class="fa-solid fa-trash"></i> Remove
+                </a>
+            </div>
+        </div>
+
+        <!-- ITEM 2 -->
+        <div class="cart-item-card">
+            <div class="cart-item-img">
+                <img src="assets/images/wine1.jpg" alt="Red Wine">
+            </div>
+            <div class="cart-item-details">
+                <h3>Classic Red Wine</h3>
+                <p class="price">Price: ₹1,750.00</p>
+
+                <div class="cart-qty-form">
+                    <input type="number" value="1" min="1">
+                    <button class="btn-update">Update</button>
+                </div>
+
+                <p class="subtotal">Subtotal: ₹1,750.00</p>
+                <a href="#" class="btn-remove">
+                    <i class="fa-solid fa-trash"></i> Remove
+                </a>
+            </div>
+        </div>
+
+    </div>
+</section>
+
+<!-- CART SUMMARY -->
+<section class="cart-summary-section">
+    <h2>Cart Summary</h2>
+    <div class="cart-summary-container">
+        <p><strong>Total Items:</strong> 2</p>
+        <p><strong>Total Price:</strong> ₹4,250.00</p>
+        <a href="checkout.html" class="btn checkout-btn">Proceed to Checkout</a>
+    </div>
+</section>
+
+<!-- SUGGESTED PRODUCTS -->
+<section class="cart-suggestions-section">
+    <h2>You May Also Like</h2>
+
+    <div class="cart-suggestions-container">
+
+        <div class="suggestion-card">
+            <img src="assets/images/vodka1.jpg" alt="Vodka">
+            <h4>Premium Vodka</h4>
+            <p>₹1,299</p>
+            <a href="#" class="btn">Add to Cart</a>
+        </div>
+
+        <div class="suggestion-card">
+            <img src="assets/images/beer1.jpg" alt="Craft Beer">
+            <h4>Craft Beer Pack</h4>
+            <p>₹899</p>
+            <a href="#" class="btn">Add to Cart</a>
+        </div>
+
+        <div class="suggestion-card">
+            <img src="assets/images/rum1.jpg" alt="Dark Rum">
+            <h4>Dark Rum</h4>
+            <p>₹1,199</p>
+            <a href="#" class="btn">Add to Cart</a>
+        </div>
+
+        <div class="suggestion-card">
+            <img src="assets/images/whiskey2.jpg" alt="Reserve Whiskey">
+            <h4>Reserve Whiskey</h4>
+            <p>₹3,299</p>
+            <a href="#" class="btn">Add to Cart</a>
+        </div>
+
+    </div>
+</section>
+
+<!-- FOOTER -->
+<footer class="site-footer">
+    <p>© 2025 BoozeHub. All Rights Reserved.</p>
+</footer>
+
+</body>
+</html>
